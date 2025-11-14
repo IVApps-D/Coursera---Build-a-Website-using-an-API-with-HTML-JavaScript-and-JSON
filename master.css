@@ -1,0 +1,147 @@
+/* Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* ===================== HEADER ===================== */
+.header-image {
+    width: 100%;
+    height: 240px;
+    background: url("../images/clouds-bg.jpg") no-repeat center center/cover;
+}
+
+/* ===================== MAIN CONTENT ===================== */
+.content-area {
+    min-height: calc(100vh - 240px);
+    background: url("../images/illustration-bg.jpg") no-repeat center center/cover;
+    padding: 40px 20px;
+}
+
+.title {
+    font-size: 3rem;
+    color: #ffeb3b;
+    margin: 10px 0;
+    text-shadow: 0 0 10px black;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.powered {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.badge {
+    padding: 5px 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: white;
+    background-color: #2666dd;
+}
+
+/* UI Elements */
+.ui-block {
+    margin: 20px 0;
+}
+
+select {
+    padding: 8px 8px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: none;
+    height: 42px;
+}
+
+/* ===================== FORECAST GRID ===================== */
+
+#forecast {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* ===================== FORECAST CARD ===================== */
+
+.forecast-card {
+    width: 160px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 12px rgba(0,0,0,0.4);
+    text-align: center;
+    background: #002b74;
+}
+
+/* -------- TOP SECTION -------- */
+.card-top {
+    background: linear-gradient(#d1e3f7, #29cdff);
+    padding: 10px 5px;
+    height: 120px;
+    box-sizing: border-box;
+}
+
+.card-top h3 {
+    margin: 0 0 6px 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* Proper icon proportions */
+.weather-icon {
+    width: 120px;
+    height: auto;
+}
+
+/* -------- BOTTOM SECTION -------- */
+.card-bottom {
+    background: #002b74;
+    height: 100px;
+    padding: 10px 5px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.weather-label {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 6px;
+}
+
+.card-bottom p {
+    margin: 3px 0;
+}
+
+
+/* ============================================================
+   RESPONSIVE BEHAVIOR LIKE ORIGINAL EXAMPLE
+   ============================================================ */
+
+/* MOBILE — cards full width, stacked vertically */
+@media (max-width: 480px) {
+
+    #forecast {
+        display: block;                   /* no flex → vertical stacking */
+        width: 100%;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    .forecast-card {
+        width: 90%;                       /* full width like example */
+        max-width: 350px;                 /* optional cap */
+        margin: 0 auto 20px auto;         /* centered, space below */
+        display: block;
+    }
+
+    .weather-icon {
+        width: 75px;
+    }
+}
+

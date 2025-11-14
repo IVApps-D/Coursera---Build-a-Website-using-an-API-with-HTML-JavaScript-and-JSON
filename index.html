@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
+
+  <link rel="stylesheet" href="css/master.css">
+
+  <title>EurOrbit – European Weather Forecast</title>
+</head>
+
+<body>
+
+  <!-- ======================== HEADER BILD ======================== -->
+  <header class="header-image"></header>
+
+
+  <!-- ======================== HAUPTINHALT ======================== -->
+  <main class="content-area">
+
+    <h1 class="title">EurOrbit</h1>
+    <h2 class="subtitle">European Weather Forecast</h2>
+
+    <p class="powered">
+        Powered by 
+        <a href="https://www.7timer.info/doc.php?lang=en" target="_blank" class="badge-link">
+          <span class="badge">7Timer!</span>
+        </a>
+      </p>
+      
+
+    <div class="ui-block">
+      <select id="citySelect">
+        <option value="">-- select a city --</option>
+      </select>
+    </div>
+
+    <!-- Forecast Container -->
+    <div id="forecast" class="forecast-grid"></div>
+
+  </main>
+
+  <footer>
+    <p class="copyright-text">© Copyright 2023 EurOrbit</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
